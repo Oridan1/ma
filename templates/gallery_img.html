@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>MA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css')}}" />
+		<noscript><link rel="stylesheet" href="{{url_for('static', filename='assets/css/noscript.css')}}" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="tabs">
+			<a href="dibujos"><div class ="asd">DIBUJOS</div> </a>
+			<a href="poemas"><div class ="asd">POEMAS</div> </a>
+			<a href="poemas_menores"><div class ="asd">COLLAGES</div> </a>
+			<a href="hojas_cuadriculadas"><div class ="asd">OBJETOS</div> </a>
+			<a href="tejidos"><div class ="asd">TEJIDOS</div> </a>
+			<a href="video"><div class ="asd">LECTURAS</div> </a>
+		</div>
+			<img id="imagen" src="{{url_for('static', filename='images/'+name+'/'+num+'.jpg')}}" alt="" />
+			<p id="img_caption">{{url_for('static', filename='texts/'+name+'/'+num+'.txt')}}</p>
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js')}}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js')}}"></script>
+	</body>
+</html>
